@@ -1,0 +1,7 @@
+[package]
+name = "rustabus"
+version = "0.1.0"
+authors = ["Egor Kovetskiy <e.kovetskiy@gmail.com>"]
+
+[dependencies]
+dbus = { git = "https://github.com/diwic/dbus-rs.git" }

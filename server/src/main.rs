@@ -10,7 +10,6 @@ fn main() {
 
     let rule = "ping from rustabus".to_string();
 
-
     while true {
         let mut message = dbus::Message::new_signal(
             "/com/github/kovetskiy/rustabus",

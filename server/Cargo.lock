@@ -1,0 +1,20 @@
+[root]
+name = "rustabus"
+version = "0.1.0"
+dependencies = [
+ "dbus 0.2.0 (git+https://github.com/diwic/dbus-rs.git)",
+]
+
+[[package]]
+name = "dbus"
+version = "0.2.0"
+source = "git+https://github.com/diwic/dbus-rs.git#c1ecdfb62678c1e68b53ebfb4d06445e58b7c3fb"
+dependencies = [
+ "libc 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
