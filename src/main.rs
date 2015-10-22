@@ -6,10 +6,9 @@ use dbus::tree::Signal;
 fn main() {
     let connection = Connection::get_private(BusType::Session).unwrap();
 
-    let rule = "type='signal',interface='com.github.kovetskiy',member='Ping'".to_string();
+    let rule = "ping from rustabus".to_string();
 
-    let mut message = dbus::Message::new_method_call(
-        "com.github.kovetskiy.rustabus",
+    let mut message = dbus::Message::new_signal(
         "/com/github/kovetskiy/rustabus",
         "com.github.kovetskiy.rustabus",
         "Ping"
